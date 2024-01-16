@@ -7,6 +7,7 @@ public class Todo0116 {
 		Scanner scn = new Scanner(System.in);
 
 		while (true) {
+			// 2024.01.16 수정.
 			System.out.println("값을 입력>>> ");
 			String input = scn.nextLine();
 			if (input.equals("quit")) {
