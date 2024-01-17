@@ -7,7 +7,8 @@ public class Todo0116 {
 		Scanner scn = new Scanner(System.in);
 
 		while (true) {
-			// 추가작어.ㅁ.......
+			// 원격작업.ㅇ.ㄴ믈ㅇㄴ.르.ㄴㅇ믈.ㄴㅇㄹ
+
 			// 2024.01.16 수정.
 			System.out.println("값을 입력>>> ");
 			String input = scn.nextLine();
