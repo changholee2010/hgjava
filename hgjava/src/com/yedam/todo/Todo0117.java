@@ -5,14 +5,15 @@ public class Todo0117 {
 	}
 
 	public static void method3() {
-		// commit:2
+		// commit:3
 	}
 
 	public static void method2() {
-		// commit:1
+		// commit:2
 	}
 
 	public static void method1() {
+		// commit:1
 		// 친구3명의 이름과 연락처를 입력하도록..메세지출력.
 		// 입력완료.
 
