@@ -5,7 +5,7 @@ public class Todo0117 {
 	}
 
 	public static void method3() {
-		// commit:3
+		// commit:3 added...
 	}
 
 	public static void method2() {
