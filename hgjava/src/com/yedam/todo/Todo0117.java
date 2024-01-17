@@ -4,6 +4,10 @@ public class Todo0117 {
 	public static void main(String[] args) {
 	}
 
+	public static void method3() {
+		// commit:2
+	}
+
 	public static void method2() {
 		// commit:1
 	}
