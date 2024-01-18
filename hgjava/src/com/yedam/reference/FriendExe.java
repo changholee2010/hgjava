@@ -34,12 +34,26 @@ public class FriendExe {
 			int menu = Integer.parseInt(scn.nextLine());
 			switch (menu) {
 			case 1: // 등록.
-				System.out.print("이름>>> ");
-				String name = scn.nextLine();
-				System.out.print("몸무게>>> ");
-				weight = Double.parseDouble(scn.nextLine());
-				System.out.print("점수>>> ");
-				score = Integer.parseInt(scn.nextLine());
+				String name, sweight, sscore;
+				name = sweight = sscore = "";
+
+				while (true) {
+					System.out.print("이름>>> ");
+					name = scn.nextLine();
+					System.out.print("몸무게>>> ");
+					sweight = scn.nextLine();
+					System.out.print("점수>>> ");
+					sscore = scn.nextLine();
+
+					if (name.equals("") || sweight.equals("") || sscore.equals("")) {
+						System.out.println("필수입력항목!!");
+						continue;
+					}
+					break;
+				}
+				// 값을 입력했으면 정상진행.
+				weight = Double.parseDouble(sweight);
+				score = Integer.parseInt(sscore);
 
 				Friend friend = new Friend();
 				friend.name = name;
@@ -78,12 +92,12 @@ public class FriendExe {
 					if (friends[i] != null && friends[i].name.equals(name)) {
 						// 추가정보...입력.
 						System.out.print("수정 몸무게>>> ");
-						String sweight = scn.nextLine();
+						sweight = scn.nextLine();
 						if (!sweight.equals("")) {
 							weight = Double.parseDouble(sweight);
 						}
 						System.out.print("수정 점수>>> ");
-						String sscore = scn.nextLine();
+						sscore = scn.nextLine();
 						if (!sscore.equals("")) {
 							score = Integer.parseInt(sscore);
 						}
