@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class FriendExe {
 	// 사용자입력/처리결과 출력 => 컨트롤.
 	public static void main(String[] args) {
+
 		Scanner scn = new Scanner(System.in);
 		boolean run = true;
 		FriendApp app = new FriendApp();
@@ -121,5 +122,6 @@ public class FriendExe {
 		} // end of while.
 
 		System.out.println("end of prog.");
+		scn.close();
 	}
 }
