@@ -16,9 +16,16 @@ public class FriendExe {
 
 			switch (menu) {
 			case 1: // 등록. 1)이름연락처 2)학교친구 3)회사친구
-				System.out.println("1.친구 2.회사 3.학교 ");
-				int subMenu = Integer.parseInt(scn.nextLine());
-
+				int subMenu = -1;
+				while(true) {
+					System.out.println("1.친구 2.회사 3.학교 ");
+					try {
+						subMenu = Integer.parseInt(scn.nextLine());
+						break;
+					} catch(NumberFormatException e) {
+						System.out.println("메뉴를 다시 선택.");
+					}
+				}
 				System.out.print("이름>> ");
 				String name = scn.nextLine();
 				System.out.print("연락처>> ");
