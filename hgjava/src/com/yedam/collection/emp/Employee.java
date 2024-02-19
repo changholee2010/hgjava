@@ -22,6 +22,10 @@ public class Employee {
 		return hireDate;
 	}
 
+	int getEmpNo() {
+		return empNo;
+	}
+
 	@Override
 	public String toString() {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

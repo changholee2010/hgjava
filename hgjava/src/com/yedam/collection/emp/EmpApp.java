@@ -18,7 +18,7 @@ public class EmpApp {
 		SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");
 
 		while (run) {
-			System.out.println("1.등록 2.조회(입사일자) 9.종료");
+			System.out.println("1.등록 2.조회(입사일자) 3.삭제 9.종료");
 			System.out.print("선택>> ");
 
 			int menu = Integer.parseInt(scn.nextLine());
@@ -61,6 +61,16 @@ public class EmpApp {
 						System.out.println(storage.get(i).toString());
 					}
 				}
+				break;
+			case 3:
+				System.out.println("삭제할 사원번호>> ");
+				int delNo = Integer.parseInt(scn.nextLine());
+				for (int i = 0; i < storage.size(); i++) {
+					if (storage.get(i).getEmpNo() == delNo) {
+						storage.remove(i);
+					}
+				}
+				System.out.println("삭제되었습니다.");
 				break;
 
 			case 9:
